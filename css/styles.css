@@ -1,0 +1,419 @@
+/*remplazo estilos framework*/
+html{
+    color: #333;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+*,
+*:before,
+*:after {
+box-sizing: inherit;
+}
+
+select {
+    visibility: hidden;
+    display: block;
+    position: absolute;
+}
+
+/*
+.select-dropdown{
+    max-height: 150px;
+}
+*/
+
+body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 120px;
+    min-height: 100%;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.row{
+    margin-bottom: 0px !important;
+}
+
+.container{
+    width: 85% !important;
+}
+
+/*Template de colores*/
+.green2{
+    background: #146d7a;
+}
+.green2-text{
+    color: #146d7a !important;
+}
+
+.red2{
+    background: #e4332e;
+}
+
+.btn.red2:hover{
+    background: #bd2521;
+}
+
+.btn.red2:focus{
+    background: #a92421;
+}
+
+.red2-text{
+    color: #e4332e;
+}
+
+/*template de texto*/
+p{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.title1{
+    margin-top: 0px;
+    text-transform: uppercase;
+    font-size: 14pt;
+    font-weight: 700;
+}
+
+.title2{
+    font-size: 16pt;
+    margin: 10px 0;
+    padding-bottom: 5px;
+    font-weight: 600;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+}
+
+.parra1{
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+
+/*Diseño del header*/
+header{
+    padding: 10px 0px;
+}
+
+.logo{
+    width: 100%;
+    max-width: 300px;
+}
+
+.loginBtn{
+    margin-top: 25px;
+}
+
+.userLogged > a{    
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14pt;
+    padding: 10px 10px;
+    color: #146d7a;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    margin-left: -4px;
+    transition: all 0.1s ease-in-out;
+}
+
+.userLogged > a:hover{    
+    background: rgba(0,0,0,0.1);
+}
+
+
+.userLogged > a i{    
+    font-size: inherit !important;
+    line-height: inherit !important;
+}
+
+#notMsg{
+   position: relative; 
+}
+
+#notMsg > div{
+    position: absolute;
+    line-height: 20px;
+    width: 20px;
+    font-size: 7pt;
+    right: -2px;
+    top: 4px;
+    border-radius: 100%;
+    text-align: center;
+}
+
+.userBtn{
+    padding-left: 15px !important;
+    min-width: 170px;
+    text-align: right;
+}
+
+#userMenu li a {
+    font-size: 11pt;
+    padding: 14px 10px;
+    text-align: right;
+}
+
+
+#userMenu li a > i{
+    width: 10px;
+}
+
+/*notificaciones*/
+#notiMenu {
+    width: 300px !important;
+    max-height: 300px !important;
+    overflow: auto;
+
+}
+
+.not-container{
+    border-bottom: 1px solid #ddd;
+
+}
+
+.not-container h6{
+    font-size: 11pt;
+    margin-bottom: 0px;
+}
+
+.not-msj{
+    color: #333;
+    font-size: 11pt;
+    margin-bottom: 0px;
+}
+
+.not-date{
+    text-align: right;
+    font-style: italic;
+    font-size: 11pt;
+    margin-bottom: 0px;
+    color: #999;
+}
+
+.newNot .not-container{
+    background: #e8f5f7;
+}
+
+.newNot .not-msj{
+    color: #146d7a;
+    font-weight: bold;
+}
+
+
+/*nav*/
+nav{
+    min-height: 0px;
+    height: auto;
+    line-height: 45px;
+    margin-bottom: 20px;
+}
+
+/*side nav*/
+.sidenav-title-trigger{
+    top: 6px;
+    position: relative;
+}
+
+#slide-out li a {
+    line-height: normal;
+    height: auto;
+    display: block;
+    padding: 15px 25px;
+}
+
+#slide-out li > div {
+    font-weight: bold;
+}
+
+/*pdf viewer*/
+.pdfBody{
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.pdfBody > iframe{
+    width: 100%;
+    height: 650px;
+}
+
+/*comentarios*/
+.comentarios{
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+
+#com-history{
+    max-height: 300px;
+    overflow: auto;
+    border: 1px solid #ccc;
+    padding: 0px 5px 0px 5px;
+}
+
+.com-container{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.com-user{
+    font-size: 12pt;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.com-body{
+    font-size: 12pt;
+    font-style: italic;
+    color: #333;
+    background: #eee;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.com-date h6{
+    font-size: 11pt;
+    font-weight: bold;
+    margin: 0px;
+    color: #999;
+    display: inline-block;
+    margin-left: 10px;
+    border-left: 1px solid #999;
+    padding-left: 10px;
+}
+
+/*tablas*/
+.table-container{
+    overflow: auto;
+}
+
+table.striped>tbody>tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+thead th{
+    font-size: 13px;
+    color: #146d7a;
+    vertical-align: bottom;
+    border-bottom: 1px solid;
+    padding-bottom: 4px;
+}
+
+tbody td{
+    border: 1px solid #ccc;
+}
+
+/*alertas*/
+.alert-cont{
+    margin-bottom: 25px !important;
+}
+
+.alert-msg{
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+
+/*helpers*/
+.exBtn{
+    padding: 5px 20px;
+    height: auto;
+    border-radius: 40px;
+}
+
+.st{
+    text-align: center;
+    display: block;
+    padding: 3px 9px;
+    color: white;
+    font-weight: bold;
+    border-radius: 40px;
+    font-size: 12px;
+}
+
+.st.Activo, .st.Aprobado{
+    background: #146d7a;
+}
+
+.st.Inactivo, .st.Rechazado{
+    background: #e4332e;
+}
+
+.st.Pendiente{
+    background: #039be5;
+}
+
+.st.Correccion{
+    background: #f9a825;
+}
+
+
+/*footer*/
+.page-footer{
+    /*margin-top: 20px;*/
+    /*padding-top: 15px !important;*/
+    padding-top: 0px !important;
+}
+
+.page-footer h5{
+    font-size: 13pt;
+    font-weight: 600;
+    margin: 15px 0px !important;
+}
+
+.footer-copyright{
+    background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.logoF{
+    width: 200px;
+}
+
+
+.page-footer {
+    min-height: 100px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /*padding: 1rem;*/
+    background-color: #efefef;
+    text-align: center;
+}
+
+/*data table corrections*/
+table{
+    border-collapse: collapse !important; 
+}
+
+table.dataTable {
+    margin: 0 !important;
+}
+
+
+.dataTables_wrapper .dataTables_filter input {
+     margin-left: 0 !important;
+}
+
+
+th, td{
+    padding: 15px 5px !important;
+}
+
+th{
+    border-color: #146d7a !important;
+    padding-bottom: 4px !important;
+}
+
+@media only screen and (max-width: 992px) {
+    body {
+        padding-bottom: 180px;
+    }
+
+    .page-footer {
+        min-height: 160px;
+    }
+}
